@@ -9,7 +9,8 @@
     "start": "./node_modules/.bin/electron .",
     "build-linux": "./node_modules/.bin/electron-packager . superdesktop --platform=linux --arch=x64 --out=build/",
     "build-osx": "./node_modules/.bin/electron-packager . superdesktop --platform=darwin --arch=x64 --out=build/",
-    "build-win": "./node_modules/.bin/electron-packager . superdesktop --platform=win32 --arch=x64 --out=build/"
+    "build-win": "./node_modules/.bin/electron-packager . superdesktop --platform=win32 --arch=x64 --out=build/",
+    "build-all": "npm run build-linux && npm run build-osx && npm run build-win"
   },
   "author": "",
   "license": "ISC",
