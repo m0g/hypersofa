@@ -1,10 +1,7 @@
-filetype plugin indent on
-" show existing tab with 4 spaces width
-set tabstop=4
-" when indenting with '>', use 4 spaces width
-set shiftwidth=4
-" On pressing tab, insert 4 spaces
-set expandtab
+set wildignore+=dist/*,tests-dist/*,build/*
 
-" Otherwise webpack doesn't detect your changes
-set backupcopy=yes
+let g:ctrlp_custom_ignore = 'dist'
+let g:jsx_ext_required = 0
+
+" Babel es6 support
+let g:syntastic_javascript_checkers = ['eslint']
